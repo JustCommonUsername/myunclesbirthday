@@ -1,0 +1,22 @@
+{% extends "layout.html" %}
+
+{% block title %}
+Whose webday today?
+{% endblock %}
+
+{% block div %}{% endblock %}
+
+{% block main %}
+    <style>
+        body {
+            background: url(https://media.giphy.com/media/a5viI92PAF89q/giphy.gif);
+            background-size: 100%;
+        }
+    </style>
+    <div class="jumbotron" id="semilayer">
+          <h1 class="display-4">Whose <span style="color: blue;">w</span><span style="color: red;">e</span><span style="color: orange;">b</span><span style="color: green;">d</span><span style="color: blue;">a</span><span style="color: red;">y</span> today?</h1>
+          <hr class="my-4">
+          <a class="btn btn-primary btn-lg" href="{{ url_for('webday') }}" role="button">Discover it...</a>
+    </div>
+{% endblock %}
+
